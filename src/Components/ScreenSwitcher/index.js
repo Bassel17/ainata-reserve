@@ -13,20 +13,19 @@ const ScreenSwitcher = (props)=>{
     WheelReact.config({
         up: () => {
 
-            if (screen !== 0) {
+            if (screen-1 > 0) {
                 setFirstScreen('appear');
                 setSecondScreen('second-screen--disappear');
-                setScreen(0);
-
+                setScreen(screen-1);
             }
             
         },
         down: () => {
 
-            if (screen == 0) {
+            if (screen  < props.content.length) {
                 setFirstScreen('first-screen-disappear');
                 setSecondScreen('appear');
-                setScreen(1);
+                setScreen(screen + 1);
 
             }
 
@@ -40,9 +39,9 @@ const ScreenSwitcher = (props)=>{
         <div className="screens" {...WheelReact.events}>
             {props.content.map((Screen,index)=>{
                 if (index === 0){
-                    return <Screen key={index} class ={firstScreen}/>;
+                    return <Screen key={index} className ="screen" class ={firstScreen}/>;
                 }else{
-                    return <Screen key={index} class = {secondScreen}/>;
+                    return <Screen key={index} className ="screen" class = {secondScreen}/>;
                 }
             })}
         </div> 

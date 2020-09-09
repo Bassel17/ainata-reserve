@@ -1,9 +1,8 @@
  .screens{
     overflow-y:hidden;
-   height: 100vh;
+    height: 100vh;
     position:relative;
 } 
-  
 
 .first-screen{
     background-color: blue;
@@ -22,12 +21,15 @@
 
 .appear{
     bottom:0;
+    transition: all 400ms linear;
 }
 
 .first-screen--disappear{
     top:100vh;
+    transition: all 400ms linear;
 }
 
 .second-screen--disappear{
     bottom:-100vh;
+    transition: all 400ms linear;
 }
