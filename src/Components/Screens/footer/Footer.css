@@ -1,0 +1,12 @@
+.footer__info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__info__images{
+    height: 90vh;
+    width:auto;
+    background-image: url(../../../images/footer-images.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
