@@ -1,49 +1,48 @@
-import React ,{useState} from 'react';
+import React ,{useState,useEffect} from 'react';
 import './styles.css';
-//import {useScroll} from 'react-use-gesture';
-import WheelReact from 'wheel-react';
+import PageSwitcher from './PageSwitcher';
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
+const switcher = new PageSwitcher();
 
 const ScreenSwitcher = (props)=>{
 
-    const [screen, setScreen] = useState(0);
-    const [firstScreen, setFirstScreen] = useState('appear');
-    const [secondScreen, setSecondScreen] = useState('second-screen--disappear');
-    
-    WheelReact.config({
-        up: () => {
+    const [screens,setScreens] = useState([]);
+    let  [,setState]=useState();
 
-            if (screen-1 > 0) {
-                setFirstScreen('appear');
-                setSecondScreen('second-screen--disappear');
-                setScreen(screen-1);
-            }
-            
-        },
-        down: () => {
+    useEffect(()=>{
+        const screens = switcher.transformArray(props.content);
+        setScreens(screens);
+    },[props.content])
 
-            if (screen  < props.content.length) {
-                setFirstScreen('first-screen-disappear');
-                setSecondScreen('appear');
-                setScreen(screen + 1);
+    function handleUpdate() {
+        setState({});  
+    }
 
-            }
+    const scrollUp = ()=>{
+        setScreens(switcher.up(screens));
+        handleUpdate();
+    }
 
-        }
-    });
-
-
-    
+    const scrollDown = () => {
+        setScreens(switcher.down(screens));
+        handleUpdate();
+    }
 
     return ( 
-        <div className="screens" {...WheelReact.events}>
-            {props.content.map((Screen,index)=>{
-                if (index === 0){
-                    return <Screen key={index} className ="screen" class ={firstScreen}/>;
-                }else{
-                    return <Screen key={index} className ="screen" class = {secondScreen}/>;
-                }
+        <div className="screens">
+            <ReactScrollWheelHandler
+                upHandler={scrollUp}
+                downHandler={scrollDown}
+            >
+            {screens.map((Screen,index)=>{
+                    return (
+                        <div key={index} style={Screen.style} className="screen" >
+                            <Screen.component/>
+                        </div>
+                );
             })}
+            </ReactScrollWheelHandler>
         </div> 
     );
 }

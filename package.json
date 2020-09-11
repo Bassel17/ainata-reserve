@@ -6,8 +6,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "react-use-gesture": "^7.0.16",
-    "wheel-react": "^1.0.3"
+    "react-scroll-wheel-handler": "^1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",

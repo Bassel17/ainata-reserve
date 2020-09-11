@@ -8449,10 +8449,10 @@ react-scripts@3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-use-gesture@^7.0.16:
-  version "7.0.16"
-  resolved "https://registry.yarnpkg.com/react-use-gesture/-/react-use-gesture-7.0.16.tgz#501985261ef9c815a377b6ff9be6df5a85fbb54f"
-  integrity sha512-gwgX+E+WQG0T1uFVl3z8j3ZwH3QQGIgVl7VtQEC2m0IscSs668sSps4Ss3CFp3Vns8xx0j9TVK4aBXH6+YrpEg==
+react-scroll-wheel-handler@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-scroll-wheel-handler/-/react-scroll-wheel-handler-1.1.5.tgz#57f207f9ef84a193ce9997771175f3184050e5a6"
+  integrity sha512-RrORWeLAxTLy0L5yUt1KmHVE5CSrH0j6PSOXl4QYyE7FXLbsaqaagtOkTfR/0g3XnvFGzuNt5l31MoR8ujickg==
 
 react@^16.13.1:
   version "16.13.1"
