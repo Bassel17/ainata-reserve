@@ -19,6 +19,13 @@
     position: absolute;
 }
 
+.third-screen{
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
 .appear{
     bottom:0;
     transition: all 400ms linear;
