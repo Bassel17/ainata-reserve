@@ -1,0 +1,12 @@
+.homeScreenWrapper{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-image{
+    width: 200px;   
+}
