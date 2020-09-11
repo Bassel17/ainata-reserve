@@ -5,8 +5,7 @@ import HomeScreen from './Components/Screens/homeScreen/homeScreen';
 
 function App() {
   return (
-   
-  <HomeScreen/>
+   <ScreenSwitcher content={[HomeScreen]}/>
     
   );
 }
