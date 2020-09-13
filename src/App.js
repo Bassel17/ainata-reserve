@@ -6,7 +6,8 @@ import Footer from './Components/Screens/footer/Footer';
 
 function App() {
   return (
-   <ScreenSwitcher content={[HomeScreen,Footer]}/>
+  //  <ScreenSwitcher content={[HomeScreen,Footer]}/>
+  <Footer/>
     
   );
 }

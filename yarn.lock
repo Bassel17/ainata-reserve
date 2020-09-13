@@ -1112,6 +1112,16 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-el@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-el/-/icons-el-1.0.5.tgz#9d6af6a3eeca23768f607520ba86a6173be67448"
+  integrity sha512-xw/iLpiAM/5HQffGrjw++OsF3vYVRYX/6hC7DHw0IcFvbzHLvDpxqZw0ytgiqT3008cg51Gwb62dcquFFmBxvA==
+
+"@iconify/react@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.3.tgz#ebe4d3e5f5dea23cd6a9634acd7a0a25c7414a59"
+  integrity sha512-ReZNJyr89AfED6XZIXkhsJiNv2taT3j1cTo1HVPHMsrKOz6gAYdXtD2kDWF6+GVoFUxpmnO0fMcA6yCyTf6Tow==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -10328,11 +10338,6 @@ whatwg-url@^7.0.0:
     lodash.sortby "^4.7.0"
     tr46 "^1.0.1"
     webidl-conversions "^4.0.2"
-
-wheel-react@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/wheel-react/-/wheel-react-1.0.3.tgz#413fed1954a9a0ff890442761ec1409d39baf090"
-  integrity sha512-WYaw5ylWFWawi/QsCSMcl8vY+Qi9CkU5QNxV5HNf6Cg6PKdX9g6p/eASg8zDcChCabsBCH5XdVbS7mVMOveBLg==
 
 which-module@^2.0.0:
   version "2.0.0"
