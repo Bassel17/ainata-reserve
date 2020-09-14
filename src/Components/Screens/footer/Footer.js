@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import FooterImage from '../../../images/footer-images.png';
 import logo from '../../../images/ainata_logo_with_text.png';
+import logoFox from '../../../images/FOXLOGO.png';
 import { Icon } from '@iconify/react';
 import instagramIcon from '@iconify/icons-el/instagram';
 import facebookIcon from '@iconify/icons-el/facebook';
@@ -17,19 +18,19 @@ const Footer = () =>{
                         <p>P: +96171705380</p>
                         <p>E:info@ainatareserve.com</p>
                     </div>
-                    <img src={logo} width="auto" height="100%"/>
+                    <img src={logo} width="auto" height="100%" alt="ainata reserve"/>
                     <div>
                         <Icon className="footer__info__details__icon" icon={instagramIcon} />
                         <Icon className="footer__info__details__icon" icon={facebookIcon} />
                     </div>
                 </div>
                 <div className = "footer__info__images">
-                    <img width="auto" height="100%" src={FooterImage}/>
+                    <img width="auto" height="100%" src={FooterImage} alt="wine background"/>
                 </div>
             </div>
             <div className="footer__bar" >
                 <div>Terms Of Service</div>
-                <img/>
+                <img src={logoFox} width="auto" height="25px" alt="fox"/>
                 <div>Privacy Policy</div>
             </div>
         </div>
