@@ -1,5 +1,6 @@
 import React from 'react';
 import './TerroirScreen.css';
+import LinkComponent from '../../linkComponent/LinkComponent';
 
 
 const TerroirScreen = () => {
@@ -9,10 +10,15 @@ const TerroirScreen = () => {
             <div className="terrior__image"></div>
             <div className="terrior__text">
                 <h1>
-                A COMPLEX <br/>EXPLOSION<br/>
+                A COMPLEX EXPLOSION
                 FOR THE SENSES
                 </h1>
-                <div>DISCOVER OUR TERROIR</div>
+                <LinkComponent 
+                    name="DISCOVER OUR TERROIR" 
+                    path="#"
+                    backgroundColor="#424242"
+                    color="#fff"
+                />
             </div>
         </div>
     );

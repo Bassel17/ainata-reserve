@@ -23,3 +23,30 @@
     font-size: 4em;
     color:#4D4848;
 }
+
+@media only screen and (max-width: 1024px) {
+    
+    .terrior{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .terrior__image{
+        display: none;
+    }
+
+    .terrior__text{
+        background-image: url(../../../images/explosion-glass-red-wine.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:100vh;
+        width:auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .terrior__text h1{
+        font-size: 3em;
+    }
+
+  }
