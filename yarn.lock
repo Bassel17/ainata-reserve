@@ -10329,11 +10329,6 @@ whatwg-url@^7.0.0:
     tr46 "^1.0.1"
     webidl-conversions "^4.0.2"
 
-wheel-react@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/wheel-react/-/wheel-react-1.0.3.tgz#413fed1954a9a0ff890442761ec1409d39baf090"
-  integrity sha512-WYaw5ylWFWawi/QsCSMcl8vY+Qi9CkU5QNxV5HNf6Cg6PKdX9g6p/eASg8zDcChCabsBCH5XdVbS7mVMOveBLg==
-
 which-module@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"

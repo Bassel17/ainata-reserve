@@ -6,25 +6,15 @@ import '../homeScreen/homeScreenStyles.css'
 
 const HomeScreen = () => (
 
-
+    <>
+    <div className = "main-background">
+    </div>
 <div className = "homeScreenWrapper">
     <div className = "main-logo" >
     <img className = "logo-image" src={logo} alt="Logo" />
     </div>
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
+</>
 
 
 
