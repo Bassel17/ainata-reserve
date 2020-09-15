@@ -1,11 +1,11 @@
-.passion-wrapper{
+.generosity-wrapper{
     margin: 0px;
     height: 100vh;
     display: grid;
     grid-template-columns:repeat(5, 1fr);
 }
 
-.background-picture{
+.generosity-background-pic{
     background-image: url(../../../images/bg-red-wine.jpg);
     background-repeat: no-repeat;
     background-position: left;
@@ -14,18 +14,17 @@
     grid-column: 1/3;
 }
 
-
-
-.bottle{
+.g-wine-bottle{
     width: auto;
     height: 100vh;
     z-index: 1;
     position: relative;
     left:85%;
-    top:0px;   
+    top:0px; 
 }
 
-.text{
+
+.generosity-text{
     display: flex;
     text-align: left;
     padding-top: 5rem;
@@ -35,8 +34,6 @@
     gap:4em;
 }
 
-
-.text h1{
-  font-size: 5em;
+.generosity-text h1{
+    font-size: 5em;
 }
-
