@@ -1,0 +1,25 @@
+.terrior{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.terrior__image{
+    background-image: url(../../../images/explosion-glass-red-wine.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100vh;
+    width:auto;
+}
+
+.terrior__text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5em;
+}
+
+.terrior__text h1{
+    font-size: 4em;
+    color:#4D4848;
+}
