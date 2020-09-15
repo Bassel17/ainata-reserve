@@ -3,11 +3,12 @@ import {Link} from "react-router-dom";
 
 const LinkComponent = (props)=>{
     const linkStyle = {
-        padding:"1em",
+        padding:props.padding,
         backgroundColor:props.backgroundColor,
         color:props.color,
         textDecoration:"none",
         borderRadius:"45px",
+        
     }
     return(
         <div>
