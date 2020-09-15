@@ -1,0 +1,38 @@
+.passion-wrapper{
+    margin: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+
+.right-photo{
+  position: absolute;
+  z-index: 0;
+  width: 400px;
+  height: 100vh;
+  
+  
+}
+
+
+.bottle{
+    width: auto;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    
+}
+
+button{
+    z-index: 3;
+    border: yellow 3px solid;
+}
+
+
+.text{
+    /* text-align: center; */
+    padding-top: 5rem;
+
+}
+

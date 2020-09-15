@@ -4,7 +4,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.main-background{
+    height: 100vh;
+    width:100%;
+    background-image: url(../../../images/coverphoto.jpeg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size:cover;
+    z-index: 1;
+    filter: blur(2.5px);
+}
+
+
+
+.main-logo{
+   background-color: rgba(0, 0, 0, 0.24);
+   padding: 20px;
+   position: absolute;
+   z-index: 2;
+  
 }
 
 .logo-image{
