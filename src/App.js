@@ -19,8 +19,7 @@ import {
 function App() {
   return (
   <Router>
-     {/* <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,MeetTheFamily,TerriorScreen,Footer]}/> */}
-     <FollowTheFox/>
+     <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
   </Router>
   );
 }
