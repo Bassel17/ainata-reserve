@@ -9,7 +9,8 @@ import PassionMadeVisible from './Components/Screens/PassionMadeVisible/passion'
 import MeetTheCharacter from './Components/Screens/MeetTheCharacter/meet';
 import Generosity from './Components/Screens/Generosity/generosity'
 import Elegance from './Components/Screens/Elegance/elegance';
-import MeetTheFamily from './Components/Screens/MeetTheFamily/meetTheFamily'
+import MeetTheFamily from './Components/Screens/MeetTheFamily/meetTheFamily';
+import FollowTheFox from './Components/Screens/FollowTheFox/FollowTheFox';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -18,8 +19,8 @@ import {
 function App() {
   return (
   <Router>
-     {/* <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,TerriorScreen,Footer]}/> */}
-     <MeetTheFamily/>
+     {/* <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,MeetTheFamily,TerriorScreen,Footer]}/> */}
+     <FollowTheFox/>
   </Router>
   );
 }
