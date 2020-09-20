@@ -11,15 +11,23 @@ import Generosity from './Components/Screens/Generosity/generosity'
 import Elegance from './Components/Screens/Elegance/elegance';
 import MeetTheFamily from './Components/Screens/MeetTheFamily/meetTheFamily';
 import FollowTheFox from './Components/Screens/FollowTheFox/FollowTheFox';
+import NavigationMenu from './Components/navigationMenu/NavigationMenu';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route
 } from "react-router-dom";
 
 
 function App() {
   return (
   <Router>
-     <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
+    <NavigationMenu/>
+    <Switch>
+          <Route path="/">
+            <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
+          </Route>
+    </Switch>
   </Router>
   );
 }

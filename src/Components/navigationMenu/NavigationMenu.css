@@ -1,0 +1,95 @@
+.navigationMenu__btn{
+    position: fixed;
+    right: 2px;
+    top:2px;
+    z-index: 3;
+}
+
+.navigationMenu__btn:hover{
+    cursor: pointer;
+}
+
+.navigationMenu__bar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 35vh 50vh 15vh;
+    width:30vw;
+    transition-property: right;
+    transition-duration: 400ms;
+}
+
+.navigationMenu__bar--open{
+    right: 0;
+}
+.navigationMenu__bar--close{
+    right: -30vw;
+}
+
+.navigationMenu__bar__main{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.navigationMenu__bar__logo{
+    align-self: center;
+}
+
+.navigationMenu__bar__close:hover{
+    cursor: pointer;
+}
+
+.navigationMenu__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+}
+
+.navigationMenu__links__link{
+    text-decoration: none;
+    font-size: 2em;
+    color:#000;
+    margin:5px;
+    padding:5px;
+}
+
+.navigationMenu__links__link:hover{
+    border-bottom: 2px solid #D4AF37;
+}
+
+.navigationMenu__languageBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3/4;
+    font-size: 2em;
+}
+
+.navigationMenu__languageBtns__btn{
+    border: none;
+    font-size: 1em;
+}
+
+.navigationMenu__languageBtns__btn:hover{
+    cursor: pointer;
+    color:#D4AF37;
+}
+
+@media only screen and (max-width: 824px) {
+    
+    .navigationMenu__bar{
+        width:100%;
+    }
+    
+    .navigationMenu__bar--close{
+        right: -100%;
+    }
+
+}
