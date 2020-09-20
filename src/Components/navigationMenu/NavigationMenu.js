@@ -6,12 +6,16 @@ import bxX from '@iconify/icons-bx/bx-x';
 import foxLogo from '../../images/FOXLOGO.png';
 import {Link} from "react-router-dom";
 
-const NavigationMenu = () => {
+const NavigationMenu = (props) => {
 
     const [navigationBarState,setNavigationBarState] = useState("navigationMenu__bar--close");
 
     const navigationBarToggler = (class_name)=>{
         setNavigationBarState(class_name);
+    }
+
+    const switchLanguageTo = (language) => {
+        props.switchLanguageTo(language);
     }
 
     return(
@@ -29,9 +33,9 @@ const NavigationMenu = () => {
                     <Link className="navigationMenu__links__link" to="#">Contact</Link>
                 </div>
                 <div className="navigationMenu__languageBtns">
-                    <button className={`navigationMenu__languageBtns__btn`}>EN</button>
+                    <button className={`navigationMenu__languageBtns__btn`} onClick={()=>switchLanguageTo("EN")}>EN</button>
                     |
-                    <button className={`navigationMenu__languageBtns__btn`}>FR</button>
+                    <button className={`navigationMenu__languageBtns__btn`} onClick={()=>switchLanguageTo("FR")}>FR</button>
                 </div>
             </div>
         </div>

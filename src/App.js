@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import ScreenSwitcher from './Components/ScreenSwitcher';
 import HomeScreen from './Components/Screens/homeScreen/homeScreen';
@@ -20,9 +20,16 @@ import {
 
 
 function App() {
+
+  const [language, setLanguage] = useState("EN");
+
+  const switchLanguageTo = (language) => {
+    setLanguage(language);
+  }
+
   return (
   <Router>
-    <NavigationMenu/>
+    <NavigationMenu switchLanguageTo = {switchLanguageTo}/>
     <Switch>
           <Route path="/">
             <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
