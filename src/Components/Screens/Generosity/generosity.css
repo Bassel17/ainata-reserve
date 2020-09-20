@@ -2,7 +2,29 @@
     margin: 0px;
     height: 100vh;
     display: grid;
-    grid-template-columns:repeat(5, 1fr);
+    grid-template-columns:1fr 3fr;
+}
+
+.generosity-background{
+    position: absolute;
+    z-index: -1;
+    background-image: url(../../../images/lastpattern.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    filter:opacity(0.2);
+}
+
+.generosity-background__second{
+    position: absolute;
+    z-index: -1;
+    background-image: url(../../../images/lastPattern2.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    filter:opacity(0.2);
 }
 
 .generosity-background-pic{
@@ -11,7 +33,7 @@
     background-position: left;
     background-size: cover;
     height: 100vh;
-    grid-column: 1/3;
+    grid-column: 1/2;
 }
 
 .g-wine-bottle{
@@ -25,15 +47,76 @@
 
 
 .generosity-text{
+    justify-self: center;
     display: flex;
+    align-items:center;
     text-align: left;
     padding-top: 5rem;
-    padding-right: 5rem;
+    padding-left: 5rem;
     flex-direction: column;
-    grid-column: 4/5;
+    grid-column: 2/3;
     gap:4em;
+    width:50%;
 }
 
 .generosity-text h1{
     font-size: 5em;
+}
+
+.generosity-text div{
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 1024px){
+    .g-wine-bottle{
+        left: 30%;
+    }
+   
+}
+
+@media only screen and (max-width: 1014px){
+    .generosity-background-pic{
+        background-image: none;
+    }
+    
+}
+
+@media only screen and (max-width: 390px){
+    .generosity-text h1{
+        font-size: 2.5em;
+        align-content: flex-end;
+    }
+    /* .g-wine-bottle{
+        right: 50%;
+    } */
+
+    
+}
+
+@media only screen and (max-width: 850px){
+    .g-wine-bottle{
+        left: 0;
+    }
+    .generosity-text{
+        justify-self: start;
+        display: flex;
+        align-items:center;
+        text-align: left;
+        padding-top: 5rem;
+        padding-left: 0;
+        flex-direction: column;
+        grid-column: 2/3;
+        gap:4em;
+        width:100%;
+    }
+        .generosity-text h1{
+            font-size: 2em;
+        }
+        .generosity-text__link{
+            padding: 10px 20px !important;
+        }
+        .generosity-wrapper{
+            width:100%;
+            grid-template-columns:1fr 1fr;
+        }
 }

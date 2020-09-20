@@ -8,6 +8,8 @@ import LinkComponent from '../../linkComponent/LinkComponent'
 const GenerosityHasAName = () =>(
 
 <div className = "generosity-wrapper">
+    <div className = "generosity-background"></div>
+    <div className = "generosity-background__second"></div>
     <div className = "generosity-background-pic">
         <div className = "generosity-wine-bottle">
         <img
@@ -19,13 +21,16 @@ const GenerosityHasAName = () =>(
     </div>
     <div className = "generosity-text">
         <h1>Generosity Has A Name</h1>
-        <LinkComponent 
-                name="Try A Swing"
-                path="#"
-                color="#fff"
-                backgroundColor="#424242"
-                padding="10px 50px"
-            />
+        <div>
+            <LinkComponent 
+                    name="Try A Swing"
+                    path="#"
+                    color="#fff"
+                    backgroundColor="#424242"
+                    padding="10px 50px"
+                    className="generosity-text__link"
+                />
+        </div>
     </div>
 </div>
 

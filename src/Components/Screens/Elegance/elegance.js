@@ -9,19 +9,20 @@ import './elegance.css'
 const MeetTheElegance = () => (
 
 <div className = "elegance-wrapper">
+    <div className="elegance-wrapper__background"></div>
+    <div className="elegance-wrapper__second__background"></div>
     <div className = "elegance-background">
         <div className = "elegance-wine-bottle">
-        <img 
+        <img
             className ="elegance-w-bottle" 
             src={WineBottle}
             alt="wineBottle"
         />
         </div>
-
     </div>
     <div className = "elegance-text">
             <h1>Meet The Elegance</h1>
-            <LinkComponent 
+            <LinkComponent
                 name="Go For A Dip"
                 path="#"
                 color="#fff"
