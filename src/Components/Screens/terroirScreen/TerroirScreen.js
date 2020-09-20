@@ -18,6 +18,7 @@ const TerroirScreen = () => {
                     path="#"
                     backgroundColor="#424242"
                     color="#fff"
+                    padding="10px 20px"
                 />
             </div>
         </div>

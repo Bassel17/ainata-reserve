@@ -22,8 +22,9 @@ const MeetTheCharacter = () => (
             <LinkComponent 
                 name="LET’S HANG"
                 path="#"
-                color="#262424"
-                backgroundColor="#D4AF37"
+                color="#fff"
+                backgroundColor="#424242"
+                padding="10px 50px"
             />
         </div>
     </div>
