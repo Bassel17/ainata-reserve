@@ -40,3 +40,9 @@
     font-size: 5em;
 }
 
+@media only screen and (max-width: 1024px){
+    .w-bottle{
+        right: 50%;
+    }
+}
+

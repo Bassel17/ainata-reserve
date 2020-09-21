@@ -15,6 +15,7 @@ const LinkComponent = (props)=>{
             <Link 
                 to={props.path}
                 style={linkStyle}
+                className = {props.className}
             >
                 {props.name}
             </Link>
