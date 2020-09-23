@@ -7,17 +7,19 @@ import LinkComponent from '../../linkComponent/LinkComponent'
 const PassionMadeVisible = () => (
 
 <div className = "passion-wrapper">
+    <div className = "passion-wrapper-background"></div>
+    <div className = "passion-wrapper-second-background"></div>
     <div className = "background-picture">
         <div className = "wine-bottle">
             <img
-                className = "bottle"
+                className = "passion-bottle"
                 src={WineBottle}
                 alt="wineBottle"
             />
         </div>
 
     </div>
-    <div className = "text">
+    <div className = "passion-text">
         <h1>Passion Made Visible</h1>
         <LinkComponent 
                 name="Take A Sip"
@@ -25,6 +27,7 @@ const PassionMadeVisible = () => (
                 color="#fff"
                 backgroundColor="#424242"
                 padding="10px 50px"
+                className="passion-text__link"
             />
     </div>
    

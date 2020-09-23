@@ -1,0 +1,27 @@
+.ainata12-wrapper{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.ainata12-left-half{
+    align-content: center;
+    flex: 1;
+}
+
+.ainata12-right-half{
+    flex: 1;
+
+}
+
+.ainata12-bottle{
+    background-image: url(../../../../images/1_ainata_v4.2_cuvee_12_bottle.jpg);
+    background-size: cover;
+    height: 100%;
+    align-content: center;
+    background-repeat: no-repeat;
+    right: 50px;
+    width: 100%;
+    background-position: center;
+    background-position-y: 60%;   
+}

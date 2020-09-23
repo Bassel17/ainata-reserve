@@ -11,7 +11,8 @@ const SecondScreen = () => (
     </div>
     <div className = "secondScreen-Wrapper">
         <div className = "secondScreen-Wrapper__logo" >
-            <img className = "secondScreen-Wrapper__logo__image" src={logo} alt="Logo" width="auto" height="200px"/>
+            <img className = "secondScreen-Wrapper__logo__image"
+             src={logo} alt="Logo" width="auto" height="200px"/>
         </div>
         <div className = "secondScreen-Wrapper__title">
             <div className="secondScreen-Wrapper__title__text">

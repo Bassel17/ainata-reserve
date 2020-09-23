@@ -11,14 +11,18 @@ import Generosity from './Components/Screens/Generosity/generosity'
 import Elegance from './Components/Screens/Elegance/elegance';
 import MeetTheFamily from './Components/Screens/MeetTheFamily/meetTheFamily';
 import FollowTheFox from './Components/Screens/FollowTheFox/FollowTheFox';
+//import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
+//import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
+//import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
 
 
 function App() {
   return (
   <Router>
+    {/* <Ainata12/> */}
      <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
   </Router>
   );
