@@ -8,6 +8,8 @@ import LinkComponent from '../../linkComponent/LinkComponent';
 const MeetTheCharacter = () => (
 
     <div className = "meet-wrapper">
+        <div className = "meet-the-character__wrapper-background"></div>
+        <div className = "meet-the-character__wrapper-second-background"></div>
         <div className = "background">
             <div className = "wine-bottle">
                 <img 

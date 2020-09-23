@@ -17,6 +17,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+//import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
+//import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
 
 
 function App() {
