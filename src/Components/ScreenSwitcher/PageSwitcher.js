@@ -11,19 +11,19 @@ const getIndexOfElement = (array,value) => {
 
 const screenShow = {
     bottom:0,
-    transition: "all 600ms ease-in",
+    transition: "all 400ms ease-in",
     position: "absolute"
 }
 
 const screenUp = {
-    bottom:"100vh",
-    transition: "all 600ms ease-in",
+    bottom:"105vh",
+    transition: "all 400ms ease-in",
     position: "absolute"
 }
 
 const screenDown = {
-    bottom:"-100vh",
-    transition: "all 600ms ease-in",
+    bottom:"-105vh",
+    transition: "all 400ms ease-in",
     position: "absolute"
 }
 

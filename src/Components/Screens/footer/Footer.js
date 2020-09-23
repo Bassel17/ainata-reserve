@@ -20,8 +20,8 @@ const Footer = () =>{
                     </div>
                     <img src={logo} width="auto" height="100%" alt="ainata reserve"/>
                     <div>
-                        <Icon className="footer__info__details__icon" icon={instagramIcon} />
-                        <Icon className="footer__info__details__icon" icon={facebookIcon} />
+                        <a href="https://www.instagram.com/ainatareserve/" target="__blank"><Icon className="footer__info__details__icon" icon={instagramIcon} /></a>
+                        <a href="https://www.facebook.com/ainatareserve/" target="__blank"><Icon className="footer__info__details__icon" icon={facebookIcon} /></a>
                     </div>
                 </div>
                 <div className = "footer__info__images">

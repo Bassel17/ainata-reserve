@@ -2,6 +2,7 @@
     overflow-y:hidden;
     height: 100vh;
     position:relative;
+    background-clip: border-box;
 } 
 
 .screen{
