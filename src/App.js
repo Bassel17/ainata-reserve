@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import ScreenSwitcher from './Components/ScreenSwitcher';
 import HomeScreen from './Components/Screens/homeScreen/homeScreen';
@@ -11,19 +11,32 @@ import Generosity from './Components/Screens/Generosity/generosity'
 import Elegance from './Components/Screens/Elegance/elegance';
 import MeetTheFamily from './Components/Screens/MeetTheFamily/meetTheFamily';
 import FollowTheFox from './Components/Screens/FollowTheFox/FollowTheFox';
-//import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
+import NavigationMenu from './Components/navigationMenu/NavigationMenu';
 import {
   BrowserRouter as Router,
+  Switch,
+  Route
 } from "react-router-dom";
 //import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
 //import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
 
 
 function App() {
+
+  const [language, setLanguage] = useState("EN");
+
+  const switchLanguageTo = (language) => {
+    setLanguage(language);
+  }
+
   return (
   <Router>
-    {/* <Ainata12/> */}
-     <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
+    <NavigationMenu switchLanguageTo = {switchLanguageTo}/>
+    <Switch>
+          <Route path="/">
+            <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
+          </Route>
+    </Switch>
   </Router>
   );
 }
