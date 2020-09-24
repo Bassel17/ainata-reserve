@@ -1,31 +1,28 @@
-.ainata12-wrapper{
+.syrah-wrapper{
     margin: 0;
     height: 100vh;
-    display: flex;
-     
-    
+    display: flex;   
+}
+
+.syrah-left-half{
+    flex: 1;
+
     
 }
 
-.ainata12-left-half{
+.syrah-right-half{
     flex: 1;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #870000, #190a05);
-
-    
-}
-
-.ainata12-right-half{
-    flex: 1;
+    background-image: linear-gradient(to right, #9c0c1d, #cc6826);
 
 
 }
 
-.ainata12-bottle{
-    background-image: url(../../../../images/1_ainata_v4.2_cuvee_12_bottle.jpg);
+.syrah-bottle{
+    background-image: url(../../../../images/2_ainata_v4.2_cuvee_24_bottle.jpg);
     background-size: cover;
     height: 100%;
     align-content: center;
@@ -38,7 +35,7 @@
 
 
 
- .ainata12-logo__wrapper{
+ .syrah-logo__wrapper{
     height: 100vh;
     position: absolute;
     width: 100%;
@@ -48,13 +45,14 @@
 
 } 
 
-.ainata12-logo{
+.syrah-logo{
     height: 250px;
     padding-top: 1em;
+    padding-left: 0.3em;
 
 }
 
-.ainata12-text {
+.syrah-text {
    font-size: 1.5em;
    /* align-items: center; */
    /* padding-top: 5em; */
@@ -65,13 +63,15 @@
 
 }
 
-.ainata12-title{
-    /* font-size: 1.5em; */
-     text-align: start;
-    /* padding-top: 1em; */
-    /* align-items: flex-start; */
+.syrah-title{
+    text-align: start;
     padding-left: 0.5em;
     color: white;
    
 
 }
+
+
+
+
+
