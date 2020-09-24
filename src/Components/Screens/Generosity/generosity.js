@@ -1,15 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import WineBottle from '../../../images/silouett with label.png'
 import '../Generosity/generosity.css'
 import LinkComponent from '../../linkComponent/LinkComponent'
+import VizSensor from 'react-visibility-sensor';
 
 
-
-const GenerosityHasAName = () =>(
-
+const GenerosityHasAName = () =>{
+    const [visibility,setVisbility]=useState(false);
+    return(
+<VizSensor
+    partialVisibility
+    onChange={(isVisible) => {
+        setVisbility(isVisible)
+    }}
+>
 <div className = "generosity-wrapper">
     <div className = "generosity-background"></div>
-    <div className = "generosity-background__second"></div>
+    <div className = {`generosity-background__second ${visibility ? 'generosity-background__second--animate':''}`}></div>
     <div className = "generosity-background-pic">
         <div className = "generosity-wine-bottle">
         <img
@@ -33,12 +40,10 @@ const GenerosityHasAName = () =>(
         </div>
     </div>
 </div>
-
-
-
-
+</VizSensor>
 
 );
+}
 
 
 export default GenerosityHasAName;
