@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import FooterImage from '../../../images/footer-images.png';
 import logo from '../../../images/ainata_logo_with_text.png';
-import logoFox from '../../../images/FOXLOGO.png';
+import logoFox from '../../../images/foxlogowhite.png';
 import { Icon } from '@iconify/react';
 import instagramIcon from '@iconify/icons-el/instagram';
 import facebookIcon from '@iconify/icons-el/facebook';

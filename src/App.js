@@ -35,7 +35,7 @@ function App() {
 
   return (
   <Router>
-    {/* <NavigationMenu switchLanguageTo = {switchLanguageTo}/> */}
+    <NavigationMenu switchLanguageTo = {switchLanguageTo}/>
     <Switch>
           <Route path="/">
            <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
