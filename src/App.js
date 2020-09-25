@@ -17,12 +17,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-// import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
-//import Ainata24 from './Components/Wines-Pages/WineScreens/Ainata24/ainata24';
-//import Syrah from './Components/Wines-Pages/WineScreens/Syrah/syrah';
-// import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
-//import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
-//import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
+import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
+import Ainata24 from './Components/Wines-Pages/WineScreens/Ainata24/ainata24';
+import Syrah from './Components/Wines-Pages/WineScreens/Syrah/syrah';
+import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
+import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
 
 
 function App() {
@@ -37,8 +36,35 @@ function App() {
   <Router>
     <NavigationMenu switchLanguageTo = {switchLanguageTo}/>
     <Switch>
-          <Route path="/">
-           <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/>
+          <Route exact path="/">
+           <ScreenSwitcher
+            language={language} 
+            content={[
+              HomeScreen,
+              SecondScreen,
+              PassionMadeVisible,
+              MeetTheCharacter,
+              Generosity,
+              Elegance,
+              FollowTheFox,
+              MeetTheFamily,
+              TerriorScreen,
+              Footer
+            ]}
+           />
+          </Route>
+          <Route exact path="/wines">
+           <ScreenSwitcher
+            content={[
+              TheWines,
+              Ainata12,
+              Ainata24,
+              Syrah,
+              Chardonnay,
+              TerriorScreen,
+              Footer
+            ]}
+           />
           </Route>
     </Switch>
   </Router>

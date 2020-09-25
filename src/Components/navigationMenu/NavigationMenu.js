@@ -27,7 +27,7 @@ const NavigationMenu = (props) => {
                     <Link className="navigationMenu__bar__logo" to="/"><img src={foxLogo} height="150px" width="auto" alt="fox logo"/></Link>
                 </div>
                 <div className="navigationMenu__links">
-                    <Link className="navigationMenu__links__link" to="#">The Wines</Link>
+                    <Link className="navigationMenu__links__link" to="/wines">The Wines</Link>
                     <Link className="navigationMenu__links__link" to="#">The Fox Story</Link>
                     <Link className="navigationMenu__links__link" to="#">The Terroir</Link>
                     <Link className="navigationMenu__links__link" to="#">Contact</Link>

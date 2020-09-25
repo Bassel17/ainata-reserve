@@ -32,7 +32,7 @@ const PassionMadeVisible = () =>{
                 <h1>Passion Made Visible</h1>
                 <LinkComponent 
                         name="Take A Sip"
-                        path="#"
+                        path="/wines/#ainata12"
                         color="#fff"
                         backgroundColor="#424242"
                         padding="10px 50px"
