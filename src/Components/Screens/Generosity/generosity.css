@@ -14,6 +14,7 @@
     width: 100%;
     filter:opacity(0.1);
     background-size: 100px;
+    animation-iteration-count: 1;
 }
 
 .generosity-background__second{
