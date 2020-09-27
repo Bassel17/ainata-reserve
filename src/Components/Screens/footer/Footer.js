@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import FooterImage from '../../../images/footer-images.png';
 import logo from '../../../images/ainata_logo_with_text.png';
-import logoFox from '../../../images/FOXLOGO.png';
+import logoFox from '../../../images/foxlogowhite.png';
 import { Icon } from '@iconify/react';
 import instagramIcon from '@iconify/icons-el/instagram';
 import facebookIcon from '@iconify/icons-el/facebook';
@@ -20,8 +20,8 @@ const Footer = () =>{
                     </div>
                     <img src={logo} width="auto" height="100%" alt="ainata reserve"/>
                     <div>
-                        <Icon className="footer__info__details__icon" icon={instagramIcon} />
-                        <Icon className="footer__info__details__icon" icon={facebookIcon} />
+                        <a href="https://www.instagram.com/ainatareserve/" target="__blank"><Icon className="footer__info__details__icon" icon={instagramIcon} /></a>
+                        <a href="https://www.facebook.com/ainatareserve/" target="__blank"><Icon className="footer__info__details__icon" icon={facebookIcon} /></a>
                     </div>
                 </div>
                 <div className = "footer__info__images">

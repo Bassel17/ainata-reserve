@@ -29,8 +29,11 @@
     filter:opacity(0.1);
     background-size: 100px;
     transform: rotate(180deg);
-    animation: move 3s;
     animation-iteration-count: 1;
+}
+
+.elegance-wrapper__second__background--animate{
+    animation: move 1s;
 }
 
 @keyframes move{
