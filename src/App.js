@@ -20,9 +20,11 @@ import {
 //import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
 //import Ainata24 from './Components/Wines-Pages/WineScreens/Ainata24/ainata24';
 //import Syrah from './Components/Wines-Pages/WineScreens/Syrah/syrah';
-import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
+//import FoxOne from './Components/FoxStory/Page1/fox1';
+//import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
 //import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
 //import Ainata12 from './Components/Wines-Pages/WineScreens/Ainata12/ainata12';
+import FoxTwo from './Components/FoxStory/Page2/fox2';
 
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
     {/* <NavigationMenu switchLanguageTo = {switchLanguageTo}/> */}
     <Switch>
           <Route path="/">
-           <Chardonnay/>           {/* <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/> */}
+           <FoxTwo/>           {/* <ScreenSwitcher content={[HomeScreen,SecondScreen,PassionMadeVisible,MeetTheCharacter,Generosity,Elegance,FollowTheFox,MeetTheFamily,TerriorScreen,Footer]}/> */}
           </Route>
     </Switch>
   </Router>

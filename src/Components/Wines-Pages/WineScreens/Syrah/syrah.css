@@ -72,6 +72,35 @@
 }
 
 
+@media only screen and (max-width: 830px){
 
+    .syrah-content__container{
+        flex: 1 0 50%;
+      
+        
+
+    }
+
+    .syrah-logo{
+        display: none;
+    }
+
+    .syrah-bottle{
+        flex: 0 0 50%;
+        
+        height: 60vh;
+        
+    }
+
+    .syrah-wrapper{
+        flex-direction: column-reverse;
+    }
+     
+    .syrah-text{
+        font-size: 16px;
+        padding-top: 1em;
+    }
+     
+}
 
 

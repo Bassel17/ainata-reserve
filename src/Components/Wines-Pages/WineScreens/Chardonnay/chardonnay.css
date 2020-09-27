@@ -77,6 +77,37 @@
 }
 
 
+@media only screen and (max-width: 830px){
+
+    .chardonnay-content__container{
+        flex: 1 0 50%;
+      
+        
+
+    }
+
+    .chardonnay-logo{
+        display: none;
+    }
+
+    .chardonnay-bottle{
+        flex: 0 0 50%;
+        
+        height: 60vh;
+        
+    }
+
+    .chardonnay-wrapper{
+        flex-direction: column-reverse;
+    }
+     
+    .chardonnay-text{
+        font-size: 16px;
+        padding-top: 1em;
+    }
+     
+}
+
 
 
 

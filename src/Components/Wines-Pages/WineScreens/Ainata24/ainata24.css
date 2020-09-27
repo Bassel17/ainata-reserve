@@ -71,7 +71,36 @@
 
 }
 
+@media only screen and (max-width: 830px){
 
+    .ainata24-content__container{
+        flex: 1 0 50%;
+      
+        
+
+    }
+
+    .ainata24-logo{
+        display: none;
+    }
+
+    .ainata24-bottle{
+        flex: 0 0 50%;
+        
+        height: 60vh;
+        
+    }
+
+    .ainata24-wrapper{
+        flex-direction: column-reverse;
+    }
+     
+    .ainata24-text{
+        font-size: 16px;
+        padding-top: 1em;
+    }
+     
+}
 
 
 

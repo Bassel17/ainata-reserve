@@ -1,0 +1,63 @@
+.fox2-wrapper{
+    margin: 0;
+    height: 100vh;
+    display: flex;  
+    background: linear-gradient(to top,  #43c6ac, #191654);
+}
+
+
+.fox2-image__right{
+    
+}
+
+.fox2-text__container{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+
+.fox2-text__left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   /* 
+  
+    text-align: left; 
+    background-image: linear-gradient(to bottom, #870000, #190a05);*/
+    background-color: #dce5ec;
+    /*width: 50px;*/
+    border:solid 5px rgb(31, 21, 21);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    padding: 25px;
+    margin: 50px;
+
+}
+
+.fox2-image{
+    height: 100vh;
+    align-content: center;
+    width: 100%;
+}
+
+.fox2-text {
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-family: oswald;
+ }
+
+ .fox2-illustartion{
+    height: 100vh;
+    width: auto;
+ }
+
+ @font-face{
+    font-family: 'oswald';
+    src: url(../../../fonts/Oswald-Light.ttf);
+
+}
