@@ -6,6 +6,7 @@ import illustration from '../../../images/Planche 1 Ainata2.jpg'
 
 const FoxTwo = () => (
     <div className = "fox2-wrapper">
+        <div className = "fox2-container">
          <div className = "fox2-image__right">
 
             <img src={illustration} alt="illustration"  className = "fox2-illustartion"/>
@@ -26,6 +27,7 @@ const FoxTwo = () => (
                 his home temple. safeguarding that land as his very own,The Gods favor
                 this promising piece of land.
                 </p> 
+        </div>
         </div>
         </div>
     </div>

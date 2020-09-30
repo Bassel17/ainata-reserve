@@ -1,20 +1,33 @@
-.fox2-wrapper{
-    background: linear-gradient(to top,  #43c6ac, #191654);
+.fox5-wrapper{
+    margin: 0;
     height: 100vh;
-}
-
-.fox2-container{
-    height: 100vh;
-    display: flex;
+    display: flex;  
+    background: linear-gradient(to right, #c31432, #240b36);
 }
 
 
-.fox2-text__left{
+
+
+.fox5-text__container{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+
+.fox5-text__right{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+   /* 
+  
+    text-align: left; 
+    background-image: linear-gradient(to bottom, #870000, #190a05);*/
     background-color: #dce5ec;
+    /*width: 50px;*/
     border:solid 5px rgb(31, 21, 21);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     padding: 25px;
@@ -22,13 +35,13 @@
 
 }
 
-.fox2-image{
+.fox5-image{
     height: 100vh;
     align-content: center;
     width: 100%;
 }
 
-.fox2-text {
+.fox5-text {
     font-size: 1.5em;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +49,7 @@
     font-family: oswald;
  }
 
- .fox2-illustartion{
+ .fox5-illustartion{
     height: 100vh;
     width: auto;
  }
@@ -48,35 +61,35 @@
 }
 
 
-@media only screen and (max-width: 980px){
+/* @media only screen and (max-width: 830px){
+
+    .fox2-text__container{
+        flex: 1 0 50%;
+        height: 200px;
+        width: 500px;
+    }
 
 
 
     .fox2-illustartion{
-        height: 50vh;       
+        flex: 0 0 50%;
+        height: 60vh;
+        align-content: center;
+        
     }
 
-    .fox2-container{
-        height: 98vh;
+    .fox2-wrapper{
         flex-direction: column-reverse;
-        background-color: #dce5ec;
-        border:solid 5px rgb(31, 21, 21);
-        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-        padding: 0px;
-        margin: 0px;
-        align-items: center;
     }
      
     .fox2-text{
-        font-size: 16px;
-        padding: 0 0.5em;
+        font-size: 10px;
+        padding-top: 1em;
     }
 
     .fox2-text__left{
-       border: none;
-       background-color: none;
-       padding: 0px;
-       margin: 0px;
+       
+        
     }
      
-}
+} */
