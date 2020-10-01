@@ -1,0 +1,31 @@
+.family-background{
+    background-image: url(../../../images/WhatsApp\ Image\ 2020-08-17\ at\ 7.13.39\ PM.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 0;
+}
+
+.family-title h1{
+    font-size: 4em;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    width:100%;
+    padding: 2em 0;
+
+
+}
+
+.family-title{
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}

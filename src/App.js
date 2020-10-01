@@ -22,12 +22,14 @@
 // import Syrah from './Components/Wines-Pages/WineScreens/Syrah/syrah';
 // import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
 // import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
-import FoxTwo from './Components/FoxStory/Page2/fox2';
+//import FoxTwo from './Components/FoxStory/Page2/fox2';
 //import FoxThree from './Components/FoxStory/Page3/fox3';
 //import FoxFive from './Components/FoxStory/Page5/fox5';
-//import FoxTwo from './Components/FoxStory/Page4/fox4';
-
-
+//import FoxFour from './Components/FoxStory/Page4/fox4';
+//import Family from './Components/OurStory/Family/family';
+//import OurStory3 from './Components/OurStory/OurStory3/ourStory3';
+//import Discover from './Components/TERROIR/Discover/discover';
+import Discover2 from './Components/TERROIR/Discover Terroir/discover2';
 function App() {
 
   const [language, setLanguage] = useState("EN");
@@ -38,7 +40,7 @@ function App() {
 
   return (
     
-   <FoxTwo/>
+   <Discover2/>
   //   <NavigationMenu switchLanguageTo = {switchLanguageTo}/>
   //   <Switch>
   //         <Route exact path="/">

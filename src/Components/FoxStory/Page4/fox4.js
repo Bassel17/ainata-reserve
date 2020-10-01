@@ -6,6 +6,7 @@ import fox4 from '../../../images/Planche 3 Ainata2 .jpg'
 
 const FoxFour = () => (
     <div className = "fox4-wrapper">
+        <div className = "fox4-container">
          <div className = "fox4-image__right">
 
             <img src={fox4} alt="illustration"  className = "fox4-illustartion"/>
@@ -26,6 +27,7 @@ const FoxFour = () => (
                         "They're probably sour anyway," and proceeded to walk away.
 
                 </p> 
+        </div>
         </div>
         </div>
     </div>
