@@ -24,12 +24,12 @@ const NavigationMenu = (props) => {
             <div className={`navigationMenu__bar ${navigationBarState}`}>
                 <div className="navigationMenu__bar__main">
                     <Icon className="navigationMenu__bar__close" icon={bxX} style={{fontSize: '50px'}} onClick={()=>navigationBarToggler("navigationMenu__bar--close")}/>
-                    <Link className="navigationMenu__bar__logo" to="/"><img src={foxLogo} height="150px" width="auto" alt="fox logo"/></Link>
+                    <a className="navigationMenu__bar__logo" href="/"><img src={foxLogo} height="150px" width="auto" alt="fox logo"/></a>
                 </div>
                 <div className="navigationMenu__links">
-                    <Link className="navigationMenu__links__link" to="/wines">The Wines</Link>
-                    <Link className="navigationMenu__links__link" to="#">The Fox Story</Link>
-                    <Link className="navigationMenu__links__link" to="#">The Terroir</Link>
+                    <a className="navigationMenu__links__link" href="/wines">The Wines</a>
+                    <a className="navigationMenu__links__link" href="/stories">The Fox Story</a>
+                    <a className="navigationMenu__links__link" href="/terroir">The Terroir</a>
                     <Link className="navigationMenu__links__link" to="#">Contact</Link>
                 </div>
                 <div className="navigationMenu__languageBtns">

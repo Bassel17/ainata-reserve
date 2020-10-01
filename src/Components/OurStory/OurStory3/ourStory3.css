@@ -1,0 +1,81 @@
+.ourStory3-wrapper{
+    height: 100vh;
+  
+   
+    
+}
+
+
+
+.ourStory3-container{
+    height: 100vh;
+    display: flex; 
+}
+
+
+.ourStory3-text__right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 5px rgb(31, 21, 21);
+    padding: 25px;
+    margin: 50px;
+    
+
+}
+
+.ourStory3-photo{
+    height: 100vh;
+    align-content: center;
+    width: 100%;
+}
+
+.ourStory3-text{
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-family: oswald;
+ }
+
+ .ourStory3-photo{
+    height: 100vh;
+    width: auto;
+ }
+
+ @font-face{
+    font-family: 'oswald';
+    src: url(../../../fonts/Oswald-Light.ttf);
+
+}
+
+
+@media only screen and (max-width: 980px){
+
+    .ourStory3-photo{
+        height: 50vh;
+       
+    }
+
+    .ourStory3-container{
+        height: 98vh;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .ourStory3-text{
+        font-size: 12px;
+        padding: 0 0.5em;
+    }
+
+    .ourStory3-text__right{
+        border: none;
+        background-color: none;
+        padding: 0px;
+        margin: 0px;   
+    }
+
+}

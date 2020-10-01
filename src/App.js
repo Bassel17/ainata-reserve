@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+  import React, {useState} from 'react';
+import './App.css';
 import ScreenSwitcher from './Components/ScreenSwitcher';
 import HomeScreen from './Components/Screens/homeScreen/homeScreen';
 import Footer from './Components/Screens/footer/Footer';
@@ -25,8 +26,10 @@ import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
 // import FoxThree from './Components/FoxStory/Page3/fox3';
 // import FoxFive from './Components/FoxStory/Page5/fox5';
 // import FoxFour from './Components/FoxStory/Page4/fox4';
-
-
+// import Family from './Components/OurStory/Family/family';
+// import OurStory3 from './Components/OurStory/OurStory3/ourStory3';
+// import Discover from './Components/TERROIR/Discover/discover';
+// import Discover2 from './Components/TERROIR/Discover Terroir/discover2';
 function App() {
 
   const [language, setLanguage] = useState("EN");
@@ -56,7 +59,7 @@ function App() {
             ]}
            />
           </Route>
-          <Route exact path="/wines">
+          <Route exact path="/wines/:id?">
            <ScreenSwitcher
             content={[
               TheWines,
