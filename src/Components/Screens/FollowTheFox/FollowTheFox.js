@@ -15,7 +15,7 @@ const FollowTheFox = () => {
             </div>
             <LinkComponent
                 name="FOLLOW THE FOX"
-                path="#"
+                path="/stories/fox"
                 color="#fff"
                 backgroundColor="#424242"
                 padding="10px 50px"

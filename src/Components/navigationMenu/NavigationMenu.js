@@ -4,7 +4,6 @@ import { Icon } from '@iconify/react';
 import hamburgerMenu from '@iconify/icons-cil/hamburger-menu';
 import bxX from '@iconify/icons-bx/bx-x';
 import foxLogo from '../../images/FOXLOGO.png';
-import {Link} from "react-router-dom";
 
 const NavigationMenu = (props) => {
 
@@ -28,9 +27,10 @@ const NavigationMenu = (props) => {
                 </div>
                 <div className="navigationMenu__links">
                     <a className="navigationMenu__links__link" href="/wines">The Wines</a>
-                    <a className="navigationMenu__links__link" href="/stories">The Fox Story</a>
-                    <a className="navigationMenu__links__link" href="/terroir">The Terroir</a>
-                    <Link className="navigationMenu__links__link" to="#">Contact</Link>
+                    <a className="navigationMenu__links__link" href="/stories/fox">The Fox Story</a>
+                    <a className="navigationMenu__links__link" href="/stories/family">Our Story</a>
+                    <a className="navigationMenu__links__link" href="/stories/terroir">The Terroir</a>
+                    <a className="navigationMenu__links__link" href="/wines/contact">Contact</a>
                 </div>
                 <div className="navigationMenu__languageBtns">
                     <button className={`navigationMenu__languageBtns__btn`} onClick={()=>switchLanguageTo("EN")}>EN</button>

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 const LinkComponent = (props)=>{
     const linkStyle = {
@@ -12,13 +11,13 @@ const LinkComponent = (props)=>{
     }
     return(
         <div>
-            <Link 
-                to={props.path}
+            <a
+                href={props.path}
                 style={linkStyle}
                 className = {props.className}
             >
                 {props.name}
-            </Link>
+            </a>
         </div>
     )
 }

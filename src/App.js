@@ -22,14 +22,16 @@ import Ainata24 from './Components/Wines-Pages/WineScreens/Ainata24/ainata24';
 import Syrah from './Components/Wines-Pages/WineScreens/Syrah/syrah';
 import Chardonnay from './Components/Wines-Pages/WineScreens/Chardonnay/chardonnay';
 import TheWines from './Components/Wines-Pages/WineScreens/theWines/theWines';
-// import FoxTwo from './Components/FoxStory/Page2/fox2';
-// import FoxThree from './Components/FoxStory/Page3/fox3';
-// import FoxFive from './Components/FoxStory/Page5/fox5';
-// import FoxFour from './Components/FoxStory/Page4/fox4';
-// import Family from './Components/OurStory/Family/family';
-// import OurStory3 from './Components/OurStory/OurStory3/ourStory3';
-// import Discover from './Components/TERROIR/Discover/discover';
-// import Discover2 from './Components/TERROIR/Discover Terroir/discover2';
+import FoxOne from './Components/FoxStory/Page1/fox1';
+import FoxTwo from './Components/FoxStory/Page2/fox2';
+import FoxThree from './Components/FoxStory/Page3/fox3';
+import FoxFive from './Components/FoxStory/Page5/fox5';
+import FoxFour from './Components/FoxStory/Page4/fox4';
+import Family from './Components/OurStory/Family/family';
+import OurStory2 from './Components/OurStory/OurStory2/ourStory2';
+import OurStory3 from './Components/OurStory/OurStory3/ourStory3';
+import Discover from './Components/TERROIR/Discover/discover';
+import Discover2 from './Components/TERROIR/Discover Terroir/discover2';
 function App() {
 
   const [language, setLanguage] = useState("EN");
@@ -46,29 +48,46 @@ function App() {
            <ScreenSwitcher
             language={language} 
             content={[
-              HomeScreen,
-              SecondScreen,
-              PassionMadeVisible,
-              MeetTheCharacter,
-              Generosity,
-              Elegance,
-              FollowTheFox,
-              MeetTheFamily,
-              TerriorScreen,
-              Footer
+              {component:HomeScreen,id:""},
+              {component:SecondScreen,id:""},
+              {component:PassionMadeVisible,id:""},
+              {component:MeetTheCharacter,id:""},
+              {component:Generosity,id:""},
+              {component:Elegance,id:""},
+              {component:FollowTheFox,id:""},
+              {component:MeetTheFamily,id:""},
+              {component:TerriorScreen,id:""},
+              {component:Footer,id:""}
             ]}
            />
           </Route>
           <Route exact path="/wines/:id?">
            <ScreenSwitcher
             content={[
-              TheWines,
-              Ainata12,
-              Ainata24,
-              Syrah,
-              Chardonnay,
-              TerriorScreen,
-              Footer
+              {component:TheWines,id:""},
+              {component:Ainata12,id:"ainata12"},
+              {component:Ainata24,id:"ainata24"},
+              {component:Syrah,id:"syrah"},
+              {component:Chardonnay,id:"chardonnay"},
+              {component:TerriorScreen,id:""},
+              {component:Footer,id:"contact"}
+            ]}
+           />
+          </Route>
+          <Route exact path="/stories/:id">
+           <ScreenSwitcher
+            content={[
+              {component:FoxOne,id:"fox"},
+              {component:FoxTwo,id:""},
+              {component:FoxThree,id:""},
+              {component:FoxFour,id:""},
+              {component:FoxFive,id:""},
+              {component:Family,id:"family"},
+              {component:OurStory2,id:""},
+              {component:OurStory3,id:""},
+              {component:Discover,id:"terroir"},
+              {component:Discover2,id:""},
+              {component:Footer,id:""}
             ]}
            />
           </Route>

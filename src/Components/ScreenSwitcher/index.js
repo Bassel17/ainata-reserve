@@ -1,6 +1,7 @@
 import React ,{useState,useEffect} from 'react';
 import './styles.css';
 import PageSwitcher from './PageSwitcher';
+import { useParams } from "react-router";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 const switcher = new PageSwitcher();
@@ -9,11 +10,12 @@ const ScreenSwitcher = (props)=>{
 
     const [screens,setScreens] = useState([]);
     let  [,setState]=useState();
+    let { id } = useParams();
 
     useEffect(()=>{
-        const screens = switcher.transformArray(props.content);
+        const screens = switcher.transformArray(props.content,id);
         setScreens(screens);
-    },[props.content])
+    },[props.content,id])
 
     function handleUpdate() {
         setState({});  

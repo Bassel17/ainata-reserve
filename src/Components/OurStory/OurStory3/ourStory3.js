@@ -33,7 +33,7 @@ const OurStory3 = () => (
 
         <div className = "ourStory3-image__left">
 
-            <img src={photo} alt="wine-photo"  className = "ourStory3-photo"/>
+            <img src={photo} alt="wine"  className = "ourStory3-photo"/>
 
         </div>
    </div>
