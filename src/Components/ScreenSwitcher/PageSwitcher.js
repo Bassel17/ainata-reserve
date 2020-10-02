@@ -20,19 +20,19 @@ const getIndexOfElementWithMatchingId = (array,id)=>{
 
 const screenShow = {
     bottom:0,
-    transition: "all 400ms ease-in",
+    transition: "all 200ms ease-in",
     position: "absolute"
 }
 
 const screenUp = {
     bottom:"105vh",
-    transition: "all 400ms ease-in",
+    transition: "all 200ms ease-in",
     position: "absolute"
 }
 
 const screenDown = {
     bottom:"-105vh",
-    transition: "all 400ms ease-in",
+    transition: "all 200ms ease-in",
     position: "absolute"
 }
 

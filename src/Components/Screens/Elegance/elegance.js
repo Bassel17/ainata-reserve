@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import WineBottle from '../../../images/silouett with label.png'
+import WineBottle from '../../../images/silouett white.png'
 import LinkComponent from '../../linkComponent/LinkComponent'
 import './elegance.css'
 import VizSensor from 'react-visibility-sensor';
