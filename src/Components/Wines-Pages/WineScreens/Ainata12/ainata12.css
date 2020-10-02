@@ -53,19 +53,14 @@
 
 .ainata12-text {
    font-size: 1.5em;
-   /* align-items: center; */
-   /* padding-top: 5em; */
-   padding-left: 0.5em;
+   padding: 1em 0.5em 0 0.5em;
    flex-direction: column;
    justify-content: center;
    color: white;
 }
 
 .ainata12-title{
-    /* font-size: 1.5em; */
      text-align: start;
-    /* padding-top: 1em; */
-    /* align-items: flex-start; */
     padding-left: 0.5em;
     color: white;
    

@@ -40,7 +40,7 @@ const ScreenSwitcher = (props)=>{
             {screens.map((Screen,index)=>{
                     return (
                         <div key={index} style={Screen.style} className="screen" >
-                            <Screen.component/>
+                            <Screen.component language={props.language}/>
                         </div>
                 );
             })}

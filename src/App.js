@@ -63,6 +63,7 @@ function App() {
           </Route>
           <Route exact path="/wines/:id?">
            <ScreenSwitcher
+            language={language} 
             content={[
               {component:TheWines,id:""},
               {component:Ainata12,id:"ainata12"},
@@ -76,6 +77,7 @@ function App() {
           </Route>
           <Route exact path="/stories/:id">
            <ScreenSwitcher
+            language={language} 
             content={[
               {component:FoxOne,id:"fox"},
               {component:FoxTwo,id:""},

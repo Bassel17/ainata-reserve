@@ -58,8 +58,7 @@
 
 .chardonnay-text {
    font-size: 1.5em;
-   /* align-items: center; */
-   /* padding-top: 5em; */
+   padding: 1em 0.5em 0 0.5em;
    padding-left: 0.5em;
    flex-direction: column;
    justify-content: center;
