@@ -15,7 +15,7 @@ const TerroirScreen = () => {
                 </h1>
                 <LinkComponent 
                     name="DISCOVER OUR TERROIR" 
-                    path="#"
+                    path="/stories/terroir"
                     backgroundColor="#424242"
                     color="#fff"
                     padding="10px 20px"

@@ -9,6 +9,15 @@ const getIndexOfElement = (array,value) => {
     return -1;
 }
 
+const getIndexOfElementWithMatchingId = (array,id)=>{
+    for(let i=0;i<array.length;i++){
+        if(array[i].id === id){
+            return i;
+        }
+    }
+    return -1;
+}
+
 const screenShow = {
     bottom:0,
     transition: "all 400ms ease-in",
@@ -29,23 +38,49 @@ const screenDown = {
 
 class PageSwitcher{
 
-    transformArray(arrayOfComponents){
+    transformArray(arrayOfComponents,id){
 
         const newArray = [];
-
-        for(let i=0;i<arrayOfComponents.length;i++){
-            if(i === 0){
-                const elementStructure = {
-                    "component":arrayOfComponents[i],
-                    "style":screenShow
+        if (typeof id === 'undefined'){
+            for(let i=0;i<arrayOfComponents.length;i++){
+                if(i === 0){
+                    const elementStructure = {
+                        "component":arrayOfComponents[i].component,
+                        "style":screenShow
+                    }
+                    newArray.push(elementStructure)
+                }else{
+                    const elementStructure = {
+                        "component":arrayOfComponents[i].component,
+                        "style":screenDown
+                    }
+                    newArray.push(elementStructure)
                 }
-                newArray.push(elementStructure)
-            }else{
-                const elementStructure = {
-                    "component":arrayOfComponents[i],
-                    "style":screenDown
+            }
+        }else {
+            const indexOfElementWithId = getIndexOfElementWithMatchingId(arrayOfComponents,id);
+            for(let i=0;i<arrayOfComponents.length;i++){
+                if(i === indexOfElementWithId){
+                    const elementStructure = {
+                        "component":arrayOfComponents[i].component,
+                        "style":screenShow
+                    }
+                    newArray.push(elementStructure)
+                }else{
+                    if(i<indexOfElementWithId){
+                        const elementStructure = {
+                            "component":arrayOfComponents[i].component,
+                            "style":screenUp
+                        }
+                        newArray.push(elementStructure)
+                    }else{
+                        const elementStructure = {
+                            "component":arrayOfComponents[i].component,
+                            "style":screenDown
+                        }
+                        newArray.push(elementStructure)
+                    }
                 }
-                newArray.push(elementStructure)
             }
         }
 

@@ -31,7 +31,7 @@ const GenerosityHasAName = () =>{
         <div>
             <LinkComponent 
                     name="Try A Swing"
-                    path="#"
+                    path="/wines/syrah"
                     color="#fff"
                     backgroundColor="#424242"
                     padding="10px 50px"

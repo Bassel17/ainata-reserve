@@ -32,7 +32,7 @@ const MeetTheCharacter = () =>{
                 <h1>Meet The Character</h1>
                 <LinkComponent 
                     name="LET’S HANG"
-                    path="#"
+                    path="/wines/ainata24"
                     color="#fff"
                     backgroundColor="#424242"
                     padding="10px 50px"

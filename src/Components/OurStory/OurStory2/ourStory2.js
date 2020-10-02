@@ -9,7 +9,7 @@ const OurStory2 = () => (
         <div className = "ourStory2-container">
          <div className = "ourStory2-image__right">
 
-            <img src={image} alt="wine-image"  className = "ourStory2-image"/>
+            <img src={image} alt="wine"  className = "ourStory2-image"/>
 
         </div>
         <div className = "ourStory2-text__left">

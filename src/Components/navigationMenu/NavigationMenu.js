@@ -4,7 +4,6 @@ import { Icon } from '@iconify/react';
 import hamburgerMenu from '@iconify/icons-cil/hamburger-menu';
 import bxX from '@iconify/icons-bx/bx-x';
 import foxLogo from '../../images/FOXLOGO.png';
-import {Link} from "react-router-dom";
 
 const NavigationMenu = (props) => {
 
@@ -24,13 +23,14 @@ const NavigationMenu = (props) => {
             <div className={`navigationMenu__bar ${navigationBarState}`}>
                 <div className="navigationMenu__bar__main">
                     <Icon className="navigationMenu__bar__close" icon={bxX} style={{fontSize: '50px'}} onClick={()=>navigationBarToggler("navigationMenu__bar--close")}/>
-                    <Link className="navigationMenu__bar__logo" to="/"><img src={foxLogo} height="150px" width="auto" alt="fox logo"/></Link>
+                    <a className="navigationMenu__bar__logo" href="/"><img src={foxLogo} height="150px" width="auto" alt="fox logo"/></a>
                 </div>
                 <div className="navigationMenu__links">
-                    <Link className="navigationMenu__links__link" to="/wines">The Wines</Link>
-                    <Link className="navigationMenu__links__link" to="#">The Fox Story</Link>
-                    <Link className="navigationMenu__links__link" to="#">The Terroir</Link>
-                    <Link className="navigationMenu__links__link" to="#">Contact</Link>
+                    <a className="navigationMenu__links__link" href="/wines">The Wines</a>
+                    <a className="navigationMenu__links__link" href="/stories/fox">The Fox Story</a>
+                    <a className="navigationMenu__links__link" href="/stories/family">Our Story</a>
+                    <a className="navigationMenu__links__link" href="/stories/terroir">The Terroir</a>
+                    <a className="navigationMenu__links__link" href="/wines/contact">Contact</a>
                 </div>
                 <div className="navigationMenu__languageBtns">
                     <button className={`navigationMenu__languageBtns__btn`} onClick={()=>switchLanguageTo("EN")}>EN</button>

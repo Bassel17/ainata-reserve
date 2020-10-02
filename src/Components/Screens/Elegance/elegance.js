@@ -32,7 +32,7 @@ const MeetTheElegance = () =>{
                     <h1>Meet The Elegance</h1>
                     <LinkComponent
                         name="Go For A Dip"
-                        path="#"
+                        path="/wines/chardonnay"
                         color="#fff"
                         backgroundColor="#424242"
                         padding="10px 50px"
